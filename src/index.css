@@ -42,7 +42,7 @@ a, a:link, a:visited {
 .title--xl {
     font-size: 6rem;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 8rem;
     letter-spacing: -2.25px;
 }
 
@@ -66,5 +66,23 @@ a, a:link, a:visited {
 @media only screen and (max-width: 1500px) {
     .container {
         width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 40%;
     }
 }

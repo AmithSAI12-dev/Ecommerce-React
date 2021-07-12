@@ -1,15 +1,31 @@
+/*=============================== INTRO STYLE =======================================*/
 .intro {
     position: relative;
     top: 72px;
     width: 100%;
     display: flex;
     align-items: center;
-    height: 662px;
+    height: max-content;
     background-image: url('https://cdn.shopify.com/s/files/1/0274/4293/7933/files/Summer-Sale-06.21-Further-Reductions-Banner-Desktop.jpg?v=1625216948');
     background-size: cover;
-    background-position: center center;
+    background-position: left;
+    padding: 11% 0;
 }
 
 .intro__content {
     padding: 0 7%;
+}
+
+/*============================== RESPONSIVE STYLES ================================*/
+
+@media only screen and (max-width: 760px) {
+    .intro__content {
+        padding: 0 4%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .intro__content {
+        text-align: center;
+    }
 }
