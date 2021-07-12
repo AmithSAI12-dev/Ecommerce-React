@@ -1,0 +1,15 @@
+.intro {
+    position: relative;
+    top: 72px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 662px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0274/4293/7933/files/Summer-Sale-06.21-Further-Reductions-Banner-Desktop.jpg?v=1625216948');
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro__content {
+    padding: 0 7%;
+}
