@@ -29,6 +29,38 @@ a, a:link, a:visited {
     color: inherit;
 }
 
+/*================================== TYPOGRAPHY STYLES ====================================*/
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.title--xl {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -2.25px;
+}
+
+.title--sm {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 28px;
+
+    
+}
+
+
+/*================================== SPACING STYLES =======================================*/
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 /*================================== RESPONSIVE STYLES ====================================*/
 
 @media only screen and (max-width: 1500px) {
