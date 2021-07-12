@@ -1,4 +1,5 @@
 import React from 'react';
+import BrandPreview from '../../components/brand-preview/BrandPreview.component';
 import CustomBtn from '../../components/custom-btn/CustomBtn.component';
 import './Home.style.css';
 
@@ -16,7 +17,7 @@ function Home() {
                 </section>
             </main>
             {/* Brand Section */}
-            <section></section> 
+            <BrandPreview></BrandPreview>
             {/* Category Section  */}
             {/* Product Slider Section 1 */}
             {/* Poster Section 1 */}
