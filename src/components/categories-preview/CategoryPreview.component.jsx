@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionTitle from '../section-title/SectionTitle.component'
 import Category from './category/Category.component'
 import './CategoryPreview.style.css';
 
@@ -11,21 +10,14 @@ function CategoryPreview() {
         {name: "Wheels", image: "https://cdn.shopify.com/s/files/1/0274/4293/7933/files/Skateboardbanners__0001_Bones-STF-postSQUARE_x1200.jpg?v=1625759620"}
     ]
     return (
-       
-        <div className="container pt-60">
-            {/* Title */}
-            <SectionTitle title="Latest Skateboard" subTitle="discover" rightAlign={true}/>
-            {/* Category Container */}
-            <div className="categoryPreview__container">
-                {/* Categories */}
-                {
-                    categories.map(({name, image}) => (
-                        <Category name={name} image={image} />
-                    ))
-                }
-            </div>
+        <div className="categoryPreview__container">
+            {/* Categories */}
+            {
+                categories.map(({name, image}) => (
+                    <Category name={name} image={image} />
+                ))
+            }
         </div>
-        
     )
 }
 
