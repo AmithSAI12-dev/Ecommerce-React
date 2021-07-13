@@ -16,6 +16,13 @@
     padding: 0 7%;
 }
 
+/*============================== FEATURE CATEGORY STYLES ===============================*/
+
+.featured-category {
+    position: relative;
+    top: 72px;
+}
+
 /*============================== RESPONSIVE STYLES ================================*/
 
 @media only screen and (max-width: 760px) {

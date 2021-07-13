@@ -1,5 +1,6 @@
 import React from 'react';
 import BrandPreview from '../../components/brand-preview/BrandPreview.component';
+import CategoryPreview from '../../components/categories-preview/CategoryPreview.component';
 import CustomBtn from '../../components/custom-btn/CustomBtn.component';
 import './Home.style.css';
 
@@ -19,6 +20,9 @@ function Home() {
             {/* Brand Section */}
             <BrandPreview></BrandPreview>
             {/* Category Section  */}
+            <section className='featured-category'>
+                <CategoryPreview />
+            </section>
             {/* Product Slider Section 1 */}
             {/* Poster Section 1 */}
             {/* Product Section */}
