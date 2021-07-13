@@ -1,0 +1,39 @@
+#brandPreview {
+    width: 100%;
+    position: relative;
+    top: 72px;
+    background-color: #FBFBFB;
+}
+
+.brandPreview {
+    display: flex;
+    align-items: center;
+}
+
+.brandPreview__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.brandPreview__button {
+    position: relative;
+}
+
+.brandPreview__button::before {
+    position: absolute;
+    left: 0px;
+    border-left: 1px solid black;
+}
+
+@media only screen and (max-width: 840px) {
+    .brandPreview {
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .brandPreview__button {
+        padding: 30px 20px;
+    }
+}

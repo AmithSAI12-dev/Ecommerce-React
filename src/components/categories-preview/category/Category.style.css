@@ -1,0 +1,120 @@
+.category {
+    width: 100%;
+    min-width: 360px;
+    height: 599px;
+    margin: 0 0.5px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.category::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #292d2b;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.category > .category__img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.category__img > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.category__titleWrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 76px;
+    z-index: 1;
+    transform: rotate(180deg);
+    transition: 0.3s all cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.category__title {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: white;
+}
+
+.category__titleWrapper.hover-only {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    left: 76px;
+    top: -50%;
+    z-index: 1;
+
+}
+
+.category__titleWrapper.hover-only  > .category__title {
+    transform: rotate(180deg);
+}
+
+.category__btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.3s all cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.category:hover::after {
+    opacity: .5;
+}
+
+.category:hover .category__titleWrapper.hover-only {
+    top: 40%;
+}
+
+.category:hover .category__titleWrapper {
+    bottom: -50%;
+}
+
+.category:hover .category__btn {
+    bottom: 30px;
+}
+
+/*================================ RESPONSIVE STYLES ======================================*/
+
+@media only screen and (max-width: 1000px) {
+    .category {
+        min-width: 250px;
+        height: 420px;
+    }
+
+    .category:hover .category__titleWrapper.hover-only {
+        top: 45%;
+    }
+}

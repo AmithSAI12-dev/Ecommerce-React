@@ -6,6 +6,7 @@
 
 :root {
     --grey-color: #e8e8e8;
+    --primary-color: #00aba2;
 }
 
 html {
@@ -17,6 +18,7 @@ body {
     height: 100%;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -39,19 +41,21 @@ a, a:link, a:visited {
     text-transform: capitalize;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .title--xl {
     font-size: 6rem;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 8rem;
     letter-spacing: -2.25px;
 }
 
 .title--sm {
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 28px;
-
-    
+    line-height: 28px;   
 }
 
 
@@ -61,10 +65,31 @@ a, a:link, a:visited {
     margin-bottom: 40px;
 }
 
+.pt-60 {
+    padding-top: 60px;
+}
 /*================================== RESPONSIVE STYLES ====================================*/
 
 @media only screen and (max-width: 1500px) {
     .container {
         width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 40%;
     }
 }

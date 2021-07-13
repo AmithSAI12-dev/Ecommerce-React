@@ -52,6 +52,10 @@
     color: black !important;
 }
 
+.customBtn__hover:hover {
+    color: var(--primary-color) !important;
+}
+
 .primary {
     color: white !important;
 }
