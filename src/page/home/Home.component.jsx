@@ -2,6 +2,7 @@ import React from 'react';
 import BrandPreview from '../../components/brand-preview/BrandPreview.component';
 import CategoryPreview from '../../components/categories-preview/CategoryPreview.component';
 import CustomBtn from '../../components/custom-btn/CustomBtn.component';
+import ImageCarousel from '../../components/image-carousel/ImageCarousel.component';
 import SectionTitle from '../../components/section-title/SectionTitle.component';
 import './Home.style.css';
 
@@ -29,7 +30,11 @@ function Home() {
                 </div>
             </section>
             {/* Product Slider Section 1 */}
-            <section className=''></section>
+            <section className='featured-product pt-60'>
+                <div className="container pt-60">
+                    <ImageCarousel />
+                </div>
+            </section>
             {/* Poster Section 1 */}
             {/* Product Section */}
             {/* Poster Section 2 */}
