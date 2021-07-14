@@ -1,4 +1,5 @@
 import React from 'react'
+import './SectionTitle.style.css';
 
 function SectionTitle({title, subTitle, rightAlign}) {
     return (
