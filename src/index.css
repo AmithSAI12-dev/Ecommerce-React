@@ -13,12 +13,17 @@ html {
     font-size: 62.5%;
 }
 
+#root {
+    overflow: hidden;
+}
+
 body {
     width: 100%;
     height: 100%;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+
 }
 
 .container {
@@ -60,6 +65,9 @@ a, a:link, a:visited {
 
 
 /*================================== SPACING STYLES =======================================*/
+.mt-80 {
+    margin-top: 80px;
+}
 
 .mb-40 {
     margin-bottom: 40px;
@@ -86,6 +94,7 @@ a, a:link, a:visited {
     html {
         font-size: 50%;
     }
+    
 }
 
 @media only screen and (max-width: 450px) {

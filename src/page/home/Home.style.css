@@ -23,7 +23,22 @@
     top: 72px;
 }
 
+/*============================== FEATURED PRODUCT STYLES =================================*/
+
+.featured-product {
+    position: relative;
+    top: 72px;
+}
+
+
+
 /*============================== RESPONSIVE STYLES ================================*/
+
+@media only screen and (max-width: 990px) {
+    .featured-product > .container {
+        width: 98vw;
+    }
+}
 
 @media only screen and (max-width: 760px) {
     .intro__content {
