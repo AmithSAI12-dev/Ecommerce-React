@@ -14,7 +14,7 @@ function CategoryPreview() {
             {/* Categories */}
             {
                 categories.map(({name, image}) => (
-                    <Category name={name} image={image} />
+                    <Category name={name} image={image} key={name} />
                 ))
             }
         </div>
