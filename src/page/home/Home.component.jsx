@@ -4,6 +4,7 @@ import CategoryPreview from '../../components/categories-preview/CategoryPreview
 import CustomBtn from '../../components/custom-btn/CustomBtn.component';
 import ImageCarousel from '../../components/image-carousel/ImageCarousel.component';
 import SectionTitle from '../../components/section-title/SectionTitle.component';
+import Poster from '../../components/poster/Poster.component';
 import './Home.style.css';
 
 function Home() {
@@ -36,6 +37,11 @@ function Home() {
                 </div>
             </section>
             {/* Poster Section 1 */}
+            <Poster 
+                image="https://cdn.shopify.com/s/files/1/0274/4293/7933/files/Banners-9.7.21-Route-One-Desktop_1.jpg?v=1625759458"
+                title={"Route One O.B. \nGraphics"}
+                subTitle='New Season'
+            />
             {/* Product Section */}
             {/* Poster Section 2 */}
             {/* Poster Section 3 */}
