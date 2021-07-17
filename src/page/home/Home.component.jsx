@@ -17,7 +17,7 @@ function Home() {
                     <div className="container intro__content">
                         <h1 className="title--xl text-capitalize mb-40">Further Reductions <br/>& New Lines Added</h1>
                         {/* Custom Button Component */}
-                        <CustomBtn value="discover"/>
+                        <CustomBtn value="discover" type='primary'/>
                     </div>
                 </section>
             </main>
