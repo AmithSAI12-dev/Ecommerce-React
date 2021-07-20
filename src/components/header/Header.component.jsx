@@ -36,7 +36,7 @@ function Header() {
                 {/* Header Icons */}
                 <div className="header__icons">
                     <img src="https://cdn.shopify.com/s/files/1/0274/4293/7933/t/375/assets/club-logo-dark.svg?v=1225262083578130312" alt="Club" />
-                    <User />
+                    <a href="/login"><User /></a>
                     <Wishlist />
                     <Cart />
                 </div>

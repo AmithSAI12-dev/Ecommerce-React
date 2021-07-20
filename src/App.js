@@ -4,12 +4,14 @@ import './App.css';
 import Footer from './components/footer/Footer.component';
 import Header from './components/header/Header.component';
 import Home from './page/home/Home.component';
+import Login from './page/login/Login.component';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Route exact path='/' component={Home}></Route>
+      <Route exact path='/login' component={Login} />
       <Footer />
     </div>
   );
