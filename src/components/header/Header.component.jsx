@@ -6,6 +6,7 @@ import {ReactComponent as User} from '../../assets/user.svg';
 import {ReactComponent as Wishlist} from '../../assets/wishlist.svg';
 import {ReactComponent as Cart} from '../../assets/cart.svg';
 import MobileNav from '../mobile-nav/MobileNav.component';
+import { Link } from 'react-router-dom';
 
 function Header() {
     // State to toggle mobile dropdown
@@ -22,11 +23,24 @@ function Header() {
                 {/* Header Mobile Navigation */}
                 { open && <MobileNav />}
                 {/* Header Logo */}
-                <a href='/' className='header__logo'><Logo /></a>
+                <Link to='/' className='header__logo'><Logo /></Link>
                 {/* Header Navigation */}
                 <div className='header__navigation'>
-                    <div className='header__navigationItem'><a href='/'>Men</a></div>
-                    <div className='header__navigationItem'><a href='/'>Women</a></div>
+                    <Link to='/shop'><div className='header__navigationItem'>Men</div></Link>
+                    <Link to='/shop'><div className='header__navigationItem'>Women</div></Link>
+                    {/* Header Dropdown */}
+                    <div className="header__dropdown">
+                        <Link to='/' className='header__dropdownItem'>new in</Link>
+                        <Link to='/' className='header__dropdownItem'>Clothing</Link>
+                        <Link to='/' className='header__dropdownItem'>shoes</Link>
+                        <Link to='/' className='header__dropdownItem'>accessories</Link>
+                        <Link to='/' className='header__dropdownItem'>skateboard</Link>
+                        <Link to='/' className='header__dropdownItem'>snowboard</Link>
+                        <Link to='/' className='header__dropdownItem'>route one o.b.</Link>
+                        <Link to='/' className='header__dropdownItem'>brands</Link>
+                        <Link to='/' className='header__dropdownItem'>launches</Link>
+                        <Link to='/' className='header__dropdownItem'>sale</Link>
+                    </div>
                 </div>
                 {/* Header Search */}
                 <form action='/' className='header__form'>
@@ -36,7 +50,7 @@ function Header() {
                 {/* Header Icons */}
                 <div className="header__icons">
                     <img src="https://cdn.shopify.com/s/files/1/0274/4293/7933/t/375/assets/club-logo-dark.svg?v=1225262083578130312" alt="Club" />
-                    <a href="/login"><User /></a>
+                    <Link to='/login'><User /></Link>
                     <Wishlist />
                     <Cart />
                 </div>
