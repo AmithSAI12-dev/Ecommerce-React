@@ -1,7 +1,6 @@
 /*=============================== INTRO STYLE =======================================*/
 .intro {
     position: relative;
-    top: 72px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,14 +20,12 @@
 
 .featured-category {
     position: relative;
-    top: 72px;
 }
 
 /*============================== FEATURED PRODUCT STYLES =================================*/
 
 .featured-product {
     position: relative;
-    top: 72px;
 }
 
 
@@ -36,7 +33,6 @@
 
 .posterSection {
     position: relative;
-    top: 72px;
     width: 100%;
 }
 .posterSection__grid {
@@ -59,7 +55,6 @@
 
 .newRelease {
     position: relative;
-    top: 72px;
     height: max-content
 }
 
@@ -77,7 +72,6 @@
 
 .newsLetter {
     position: relative;
-    top: 72px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
