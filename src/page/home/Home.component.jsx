@@ -7,6 +7,7 @@ import SectionTitle from '../../components/section-title/SectionTitle.component'
 import Poster from '../../components/poster/Poster.component';
 import './Home.style.css';
 import ProductPreview from '../../components/product-preview/ProductPreview.component';
+import NewsLetter from '../../components/news-letter/NewsLetter.component';
 
 function Home() {
     return (
@@ -59,7 +60,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="container">
-                    <ProductPreview />
+                    <ProductPreview columns={4} />
                 </div>
             </section>
             {/* Poster Section 2 */}
@@ -121,17 +122,7 @@ function Home() {
                 />
             </section>
             {/* News Letter Section */}
-            <div className="mt-80"></div>
-            <section className="newsLetter container">
-                <div className="newsLetter__content">
-                    <h4 className='title--sm'>Stay in touch</h4>
-                    <h3 className="title--xl">subscribe</h3>
-                </div>
-                <form action="" className="newsLetter__form">
-                    <input type="email" placeholder="Enter your email here" className='newsLetter__input' />
-                    <CustomBtn value='subscribe' hoverType={true} />
-                </form>
-            </section>
+            <NewsLetter />
         </React.Fragment>
     )
 }
