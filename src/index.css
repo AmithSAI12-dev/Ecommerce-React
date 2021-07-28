@@ -28,6 +28,26 @@ body {
     margin: 0 auto;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 a, a:link, a:visited {
     text-decoration: none;
     color: inherit;
@@ -58,6 +78,13 @@ a, a:link, a:visited {
     letter-spacing: -2.25px;
 }
 
+.title--lg {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
 .title--sm {
     font-size: 1.8rem;
     font-weight: 300;
@@ -86,8 +113,16 @@ a, a:link, a:visited {
     margin-top: 80px;
 }
 
+.mt-100 {
+    margin-top: 100px;
+}
+
 .mb-40 {
     margin-bottom: 40px;
+}
+
+.mb-200 {
+    margin-bottom: 200px;
 }
 
 .pt-60 {
