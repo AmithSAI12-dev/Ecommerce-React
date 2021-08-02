@@ -25,7 +25,7 @@ function Shop() {
                         <div className="shop__headerRefineCollection d-flex justify-content-center">
                             {
                                 Array(6).fill().map((_,i) => 
-                                    <Link to='/'>
+                                    <Link to='/' key={i}>
                                         <div className="shop__headerRefineImg">
                                             <img src="https://cdn.shopify.com/s/files/1/0274/4293/7933/collections/plain-t-shirts_e4efc952-e0af-463d-a34e-dc853854a9ca_182x182.jpg?v=1598098150" alt="" />
                                         </div>

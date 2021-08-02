@@ -1,0 +1,36 @@
+.productDesc__image {
+    padding-right: 64px;
+}
+
+.productDesc__image > img {
+    width: calc((100% / 2) - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.productDesc__image > img:nth-child(n+3) {
+    margin-top: 20px;
+}
+
+.productDesc__content {
+    width: 428px;
+    min-width: 428px;
+    padding-top: 40px;
+}
+
+.productDesc__content .title--sm {
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+/*================================ RESPONSIVE STYLE =====================================*/
+
+@media only screen and (max-width: 980px) {
+    .productDesc__image > img {
+        width: 100%;
+    }
+
+    .productDesc__image > img:not(:first-child) {
+        margin-top: 20px;
+    }
+}
