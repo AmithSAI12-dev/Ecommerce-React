@@ -1,0 +1,115 @@
+.register {
+    position: relative;
+    top: 72px;
+}
+
+.register > .register__content {
+    padding-top: 80px;
+    color: white;
+}
+
+.register > .register__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 35.5%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0274/4293/7933/files/club-banner-1441x500-2_1920x.jpg?v=1620735507);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.register > .container > .register__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 864px;
+    margin: 0 auto;
+    padding: 60px 20px 50px 20px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.register__form > * {
+    max-width: 467px;
+    width: 100%;
+    margin: 0 auto;
+    height: 52px;
+}
+
+.register__form > .error {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.register__form > label {
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding: 7px 0;
+}
+
+.register__form > input, .register__form > input:not(:valid) {
+    margin-bottom: 23px;
+    padding: 7px 0;
+    padding-bottom: 16px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.register__form > button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s  cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.register__form > button:hover {
+    background-color: var(--primary-color);
+}
+
+.register__help {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register__help > p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: max-content;
+}
+
+.register__help > p > a {
+    font-weight: 700;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.register__help > p > a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: black;
+}
+
+/*============================== RESPONSIVE STYLES =====================================*/
+
+@media only screen and (max-width: 650px) {
+    .register > .register__bg {
+        padding-bottom: 55%;
+    }
+}
