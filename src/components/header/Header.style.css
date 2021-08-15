@@ -5,6 +5,7 @@
     top: 0px;
     background-color: white;
     z-index: 99;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .header > .container {
